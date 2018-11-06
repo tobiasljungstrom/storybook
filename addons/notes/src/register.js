@@ -9,7 +9,7 @@ addons.register(ADDON_ID, api => {
   const render = ({ active }) => <Panel channel={channel} api={api} active={active} />;
   const title = 'Notes';
 
-  addons.add(PANEL_ID, {
+  addons.addPanel(PANEL_ID, {
     type: types.TAB,
     title,
     route: '/info/',
